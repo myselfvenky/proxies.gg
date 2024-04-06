@@ -17,44 +17,8 @@
                             <a class="nav-link dropdown-toggle" href="{{ url("#") }}"
                                 data-bs-toggle="dropdown">Products</a>
                             <ul class="dropdown-menu mega-menu " style="max-width: 600px !important;">
-                                <a onclick="Intercom('show');" style="margin: 0 0 0 0; padding: 0 0 0 0;">
-                                    <div class="group">
-                                        <div class="col-8 first-column-menu">
-                                            <svg class="dropdown-icon-svg" width="51" height="51" viewbox="0 0 51 51"
-                                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect width="51" height="51" rx="10" fill="#61C453" fill-opacity="0.25">
-                                                </rect>
-                                                <path
-                                                    d="M27.2985 14.4774C26.5492 14.0863 25.5199 14.0804 24.7653 14.4701C21.542 16.1348 18.6211 18.0421 16.0637 20.1553C15.7226 20.4371 15.497 20.8315 15.5008 21.2823C15.5047 21.7316 15.7355 22.1216 16.0754 22.3996C18.6123 24.4739 21.5364 26.3834 24.7011 28.0351C25.4505 28.4262 26.4798 28.4321 27.2344 28.0424C30.4576 26.3777 33.3785 24.4704 35.936 22.3572C36.277 22.0754 36.5027 21.681 36.4988 21.2301C36.495 20.7809 36.2642 20.3908 35.9242 20.1129C33.3874 18.0386 30.4632 16.1291 27.2985 14.4774Z"
-                                                    fill="#61C453"></path>
-                                                <path
-                                                    d="M37.1974 27.1643C37.6366 26.8901 37.7703 26.3117 37.4961 25.8725C37.2219 25.4333 36.6436 25.2996 36.2044 25.5738L28.5703 30.3399C27.8903 30.7644 26.9664 31.0012 25.9996 31.0012C25.0328 31.0013 24.1088 30.7647 23.4286 30.3402L15.8782 25.628C15.439 25.3539 14.8606 25.4877 14.5865 25.9269C14.3124 26.3662 14.4462 26.9445 14.8855 27.2186L22.4359 31.9308C23.472 32.5774 24.7573 32.8763 25.9997 32.8762C27.2421 32.8761 28.5274 32.5771 29.5633 31.9304L37.1974 27.1643Z"
-                                                    fill="#61C453"></path>
-                                                <path
-                                                    d="M37.1974 31.8576C37.6366 31.5834 37.7703 31.005 37.496 30.5658C37.2218 30.1267 36.6434 29.993 36.2043 30.2672L29.5932 34.3958C28.6271 34.9991 27.3348 35.3252 25.9995 35.3253C24.6643 35.3254 23.3719 34.9994 22.4056 34.3962L15.8783 30.3214C15.4391 30.0473 14.8608 30.181 14.5866 30.6203C14.3124 31.0595 14.4462 31.6378 14.8854 31.912L21.4127 35.9867C22.7349 36.8122 24.3888 37.2004 25.9997 37.2003C27.6105 37.2002 29.2643 36.8118 30.5863 35.9862L37.1974 31.8576Z"
-                                                    fill="#61C453"></path>
-                                            </svg>
-                                            <div>
-                                                <div class="proxies-dropdown-header">
-                                                    {{ env('APP_NAME') }} IPv4 Datacenter
-                                                </div>
-                                                <div class="proxies-dropdown-subheader">
-                                                    Scrape websites with high speed.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-4" style="padding-left: 25px; margin: auto; margin: auto;">
-                                            <div>
-                                                <div class="proxies-dropdown-header-prices">
-                                                    Starts from
-                                                </div>
-                                                <div class="proxies-dropdown-subheader-prices">
-                                                    Contact Us
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a> <a onclick="Intercom('show');" style="margin: 0 0 0 0; padding: 0 0 0 0;">
+                                <a href="{{ url("/products/residential-ipv6") }}"
+                                    style="margin: 0 0 0 0; padding: 0 0 0 0;width: 100%;">
                                     <div class="group">
                                         <div class="col-8 first-column-menu">
                                             <svg class="dropdown-icon-svg" width="51" height="51" viewbox="0 0 51 51"
@@ -85,7 +49,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </a> <a onclick="Intercom('show');" style="margin: 0 0 0 0; padding: 0 0 0 0;">
+                                </a>
+                                <a href="{{ url("/products/datacenter") }}"
+                                    style="margin: 0 0 0 0; padding: 0 0 0 0; width: 100%;">
                                     <div class="group">
                                         <div class="col-8 first-column-menu">
                                             <svg class="dropdown-icon-svg" width="51" height="51" viewbox="0 0 51 51"
@@ -122,8 +88,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </a> <a href="{{ url("/residential-ipv6") }}"
-                                    style="margin: 0 0 0 0; padding: 0 0 0 0;">
+                                </a>
+                                <a href="{{ url("/products/residential-ipv6") }}"
+                                    style="margin: 0 0 0 0; padding: 0 0 0 0; width: 100%;">
                                     <div class="group">
                                         <div class="col-8 first-column-menu">
                                             <svg class="dropdown-icon-svg" width="51" height="51" viewbox="0 0 51 51"

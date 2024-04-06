@@ -150,6 +150,7 @@ $statisticsItems = [
 </div>
 
 <x-videoplayeryt />
+@include('components.worldwideav', ['product' => $product])
 <div class="feature_area section-padding-{{ $product }} ">
     <div class="container">
         <div class="background-container-{{ $product }}">

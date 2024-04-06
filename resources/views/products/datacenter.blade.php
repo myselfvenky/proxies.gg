@@ -114,9 +114,6 @@ $statisticsItems = [
 @endphp
 
 
-
-
-
 @extends('layouts.app')
 <x-header />
 
@@ -159,9 +156,168 @@ $statisticsItems = [
     @include('components.unmatched_statistics', ['statisticsItems' => $statisticsItems, 'statisticsTitle' =>
     $statisticsTitle])
 </div>
+<div class="feature_area section-padding-{{ $product }}">
+    <div class="container">
+        <div class="row justify-content-end">
+
+            <!-- Image section -->
+            <div class="col-lg-6 col-md-6 col-sm-12 order-2 order-md-1">
+                <dotlottie-player src="https://lottie.host/83d10a6b-0906-41f6-ae34-cb3c9b1c33e7/CbTmiCQYQi.json"
+                    background="" speed="1" style="width: auto; height: 454px;" loop autoplay>
+                </dotlottie-player>
+
+            </div>
+
+            <!-- Text and content section -->
+            <div class="col-lg-6 col-md-6 col-sm-12 align-self-center order-1 order-md-2">
+                <span class="global datacenter_color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M12 4.52783V21.1878L11.2 22.0978C10.09 23.3578 9.18001 23.0178 9.18001 21.3378V14.1378H6.09001C4.69001 14.1378 4.30001 13.2778 5.23001 12.2278L12 4.52783Z"
+                            fill="#017EFF"></path>
+                        <path opacity="0.4"
+                            d="M18.77 13.4878L12 21.1878V4.52781L12.8 3.61781C13.91 2.35781 14.82 2.69781 14.82 4.37781V11.5778H17.91C19.31 11.5778 19.7 12.4378 18.77 13.4878Z"
+                            fill="#017EFF"></path>
+                    </svg>
+                    Quisque vestibulum hendrerit sagittis
+                </span>
+                <div class="heading mt-2">
+                    <h1 class="datacenter_color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                    <p class="feature-p-tag datacenter_color mb-3">Shared Datacenter Proxies are concurrently accessible
+                        Vivamus sem lorem, ornare in sollicitudin vel, fermentum ac ipsum. Ut tristique sem massa, eget
+                        ultricies nunc consectetur eu.
+                    </p>
+                    <ul class="fa-ul ml-0 mb-5">
+                        <li class="mb-3 d-flex h-100 align-items-center">
+                            <span class="fa-li">
+                                <i class="fas fa-check list-datacenter"></i>
+                            </span>
+                            <span class="list-check datacenter_color">Integer purus lectus, ornare eu lorem et,
+                                pellentesque facilisis nisl. Etiam sed felis neque</span>
+                        </li>
+                        <li class="mb-3 d-flex h-100 align-items-center">
+                            <span class="fa-li">
+                                <i class="fas fa-check list-datacenter"></i>
+                            </span>
+                            <span class="list-check datacenter_color">Proin rutrum dignissim sapien, sit amet dictum
+                                libero posuere sit amet./span>
+                        </li>
+                    </ul>
+                    <a href="{{ route('home.register') }}" class="btn5 datacenter_btn d-inline-flex align-items-center">
+                        Get Started
+                        >
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
 <x-videoplayeryt product="Datacenter" />
+@include('components.worldwideav', ['product' => $product])
+
+
+<div class="feature_area section-padding-{{ $product }}">
+    <div class="container">
+        <div class="row section-padding">
+            <div class="col-lg-6 align-self-center">
+
+                <span class="global {{ $product }}_color">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path
+                            d="M12 4.52783V21.1878L11.2 22.0978C10.09 23.3578 9.18001 23.0178 9.18001 21.3378V14.1378H6.09001C4.69001 14.1378 4.30001 13.2778 5.23001 12.2278L12 4.52783Z"
+                            fill="#017EFF"></path>
+                        <path opacity="0.4"
+                            d="M18.77 13.4878L12 21.1878V4.52781L12.8 3.61781C13.91 2.35781 14.82 2.69781 14.82 4.37781V11.5778H17.91C19.31 11.5778 19.7 12.4378 18.77 13.4878Z"
+                            fill="#017EFF"></path>
+                    </svg>
+                    UNMATCHED SPEED AND RELIABILITY
+
+                </span>
+                <div class="heading mt-2 {{ $product }}_color">
+                    <h1 class="{{ $product }}_color">Elevate Your Web Scraping Game Today
+                    </h1>
+                    <p class="feature-p-tag {{ $product }}_color">
+                        Unlock the potential of web scraping with us. We are dedicated to enhancing your web scraping
+                        experience, providing you with the tools you need to succeed.</p>
+                    <div class="space-30"></div>
+                    <ul class="fa-ul">
+                        <li class="mb-4" style="padding-left: 10px;">
+                            <span class="fa-li">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                                    fill="none">
+                                    <path opacity="0.4"
+                                        d="M20.5539 4.06195C20.0447 3.98611 19.4597 3.95361 18.6364 3.95361H8.88639C8.07389 3.95361 7.47806 3.98611 7.00139 4.05111C3.37223 4.45195 2.65723 6.60778 2.65723 10.1828V16.6828C2.65723 20.2578 3.37223 22.4136 6.96889 22.8036C7.47806 22.8794 8.06306 22.9119 8.88639 22.9119H18.6364C19.4489 22.9119 20.0447 22.8794 20.5214 22.8144C24.1506 22.4136 24.8656 20.2686 24.8656 16.6828V10.1828C24.8656 6.60778 24.1506 4.45195 20.5539 4.06195Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M19.1784 12.0786H15.3867C14.9426 12.0786 14.5742 11.7103 14.5742 11.2661C14.5742 10.8219 14.9426 10.4536 15.3867 10.4536H19.1784C19.6226 10.4536 19.9909 10.8219 19.9909 11.2661C19.9909 11.7103 19.6226 12.0786 19.1784 12.0786Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M11.7035 12.3493C11.1076 12.3493 10.6201 11.8618 10.6201 11.266C10.6201 10.6701 11.0968 10.1826 11.7035 10.1826H11.7143C12.3101 10.1826 12.7976 10.6701 12.7976 11.266C12.7976 11.8618 12.3101 12.3493 11.7035 12.3493Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M8.45345 12.3493C7.85762 12.3493 7.37012 11.8618 7.37012 11.266C7.37012 10.6701 7.84678 10.1826 8.45345 10.1826C9.04928 10.1826 9.53678 10.6701 9.53678 11.266C9.53678 11.8618 9.06012 12.3493 8.45345 12.3493Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M19.178 18.0366H8.3663C7.92214 18.0366 7.54297 17.6683 7.54297 17.2241C7.54297 16.78 7.90047 16.4116 8.34464 16.4116H19.178C19.6221 16.4116 19.9905 16.78 19.9905 17.2241C19.9905 17.6683 19.6221 18.0366 19.178 18.0366Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                </svg>
+
+                            </span>
+                            <span class="list-check-header {{ $product }}_color">Lightning-Fast Speed</span>
+                            <span class="list-check {{ $product }}_color">Our high-speed proxy servers ensure
+                                lightning-fast data retrieval, allowing you to scrape websites efficiently and gather
+                                valuable information in record time. Say goodbye to slow and inefficient scraping
+                                processes.</span>
+                        </li>
+
+                        <li class="mb-4" style="padding-left: 10px;"> <span class="fa-li">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27"
+                                    fill="none">
+                                    <path opacity="0.4"
+                                        d="M20.8037 11.2658V13.6166C20.8037 14.1908 21.0312 14.7433 21.4429 15.155L22.3312 16.0433C22.7429 16.455 22.9704 17.0075 22.9704 17.5816V18.8491C22.9704 22.0991 21.3129 24.2658 17.5537 24.2658H9.97038C6.14621 24.2658 4.55371 22.0991 4.55371 18.8491V8.01579C4.55371 4.85245 6.07038 2.70745 9.68871 2.60995C9.77538 2.59912 9.87288 2.59912 9.97038 2.59912H17.5537C17.6404 2.59912 17.727 2.59912 17.8137 2.60995C21.3887 2.69662 22.9704 4.84162 22.9704 8.01579V9.09912C22.9704 9.69495 22.4829 10.1825 21.887 10.1825C21.2912 10.1825 20.8037 10.67 20.8037 11.2658Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M11.3132 2.59912L11.259 5.80579C11.2482 6.24995 10.8907 6.60745 10.4465 6.60745H10.4357C9.9807 6.59662 9.6232 6.22829 9.63403 5.77329L9.6882 2.60995C9.77486 2.59912 9.87236 2.59912 9.96986 2.59912H11.3132Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M14.5632 2.59912L14.509 5.79495C14.4982 6.22829 14.1407 6.58579 13.6965 6.58579H13.6857C13.2307 6.57495 12.8732 6.20662 12.884 5.76245L12.9382 2.59912H14.5632Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M17.8132 2.60995L17.759 5.72995C17.7482 6.17412 17.3907 6.53162 16.9465 6.53162H16.9357C16.4807 6.52079 16.1232 6.15245 16.134 5.70829L16.1882 2.59912H17.5532C17.6399 2.59912 17.7265 2.59912 17.8132 2.60995Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                    <path
+                                        d="M18.1163 24.2441C17.9321 24.255 17.7479 24.2658 17.5638 24.2658H9.98042C9.78542 24.2658 9.60125 24.2658 9.42792 24.2441L9.40625 21.0158C9.40625 19.8241 10.3704 18.8491 11.5729 18.8491H15.9171C17.1087 18.8491 18.0729 19.8133 18.0838 21.005L18.1163 24.2441Z"
+                                        fill="var(--{{ $product_title ?? 'datacenter' }})" />
+                                </svg>
+                            </span>
+                            <span class="list-check-header {{ $product }}_color">Rock-Solid Reliability</span>
+                            <span class="list-check {{ $product }}_color">Count on us for rock-solid reliability in your
+                                scraping endeavors. Our servers guarantee uninterrupted access to target websites,
+                                ensuring that your web scraping operations run smoothly and without
+                                interruptions.</span>
+                        </li>
+                    </ul>
+                    <!-- <a href="#" class="btn5">Get Started</a> -->
+                </div>
+            </div>
+
+            <div class="col-lg-6 align-self-center">
+                <div class="feature3_img_right_wrap">
+                    <dotlottie-player src="https://lottie.host/cb8a9943-9276-4a2f-9f29-baa490aac375/co8R9Xh5XZ.json"
+                        background="transparent" speed="1" style="width: auto; height: 400px;" loop autoplay>
+                    </dotlottie-player>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 <div class="feature_area section-padding-{{ $product }} ">
     <div class="container">
@@ -353,6 +509,10 @@ $statisticsItems = [
 
 </div>
 
+
+<div class="pricing_area section-padding-{{ $product }}" id="pricing">
+    @include('components.pricing')
+</div>
 
 <x-trustcard />
 <x-faqcard />
